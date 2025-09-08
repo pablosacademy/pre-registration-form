@@ -1253,7 +1253,7 @@ body{
     /* FAQ Styles */
 .faq__title{
     font-family: var(--font-pershotravneva);
-    font-size: 89px;
+    font-size: clamp(33px, 8vw, 89px);
     font-weight: var(--font-weight-regular);
     line-height: 90%;
     color: var(--color-white);
@@ -2230,7 +2230,7 @@ justify-content: space-between;
 
 .questionnaire-header__title {
     font-family: var(--font-pershotravneva);
-    font-size: clamp(24px, 5vw, 48px);
+    font-size: clamp(33px, 5vw, 48px);
     font-weight: bold;
     color: var(--color-primary);
     text-transform: uppercase;
@@ -2242,7 +2242,7 @@ justify-content: space-between;
 
 .questionnaire-header__subtitle {
     font-family: var(--font-benzin);
-    font-size: clamp(18px, 3vw, 48px);
+    font-size: 38px;
     font-weight: bold;
     color: var(--color-white);
     text-transform: uppercase;
@@ -2252,7 +2252,7 @@ justify-content: space-between;
 
 .questionnaire-header__year {
     font-family: var(--font-benzin);
-    font-size: clamp(18px, 3vw, 48px);
+    font-size: 38px;
     color: var(--color-white);
     font-weight: bold;
     text-transform: uppercase;
@@ -2446,7 +2446,7 @@ justify-content: space-between;
     }
     
     .questionnaire-lessons__title {
-        font-size: clamp(24px, 5vw, 48px);
+        font-size: clamp(33px, 5vw, 48px);
         margin-bottom: 32px;
     }
     
@@ -2497,7 +2497,7 @@ justify-content: space-between;
     }
     
     .questionnaire-lessons__title {
-        font-size: clamp(20px, 4vw, 36px);
+        font-size: clamp(33px, 4vw, 36px);
         margin-bottom: 24px;
     }
     
