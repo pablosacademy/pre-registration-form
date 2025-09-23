@@ -1,141 +1,209 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Анкета - Pablos Academy</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+        <title>Анкета - Pablos Academy</title>
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigg er.min.js"></script>
 
-    <link rel="icon" type="image/png" href="../img/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="../img/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="../img/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Pablos Academy" />
-    <link rel="manifest" href="../img/favicon/site.webmanifest" />
-</head>
-<body>
-    <header class="header">
-        <div class="header__top">
-            <div class="header__container">
-                <div class="header__logo">
-                    <a href="../index.html">
-                        <img src="./img/logo.webp" alt="logo" width="145" height="55" class="header__logo-img">
+        <link rel="icon" type="image/png" href="../img/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="../img/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="../img/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="Pablos Academy" />
+        <link rel="manifest" href="../img/favicon/site.webmanifest" />
+        <!-- Meta Pixel Code -->
+        <script>
+            !(function (f, b, e, v, n, t, s) {
+                if (f.fbq) return;
+                n = f.fbq = function () {
+                    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+                };
+                if (!f._fbq) f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = "2.0";
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s);
+            })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+            fbq("init", "827777903248122");
+            fbq("track", "PageView");
+        </script>
+        <noscript><img height="1" width="1" style="display: none;" src="https://www.facebook.com/tr?id=827777903248122&ev=PageView&noscript=1" /></noscript>
+        <!-- End Meta Pixel Code -->
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-558HHK9M");
+        </script>
+        <!-- End Google Tag Manager -->
+    </head>
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-558HHK9M" height="0" width="0" style="display: none; visibility: hidden;"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <header class="header">
+            <div class="header__top">
+                <div class="header__container">
+                    <div class="header__logo">
+                        <a href="../index.html">
+                            <img src="./img/logo.webp" alt="logo" width="145" height="55" class="header__logo-img" />
+                        </a>
+                    </div>
+
+                    <a href="#contact" class="header__cta">
+                        <span class="header__cta-text">Приєднатись</span>
+                        <svg class="header__cta-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#a)"><path d="M18.5 5.5v13h-3v-7.883l-9.09 9.09-2.117-2.117 9.09-9.09H5.5v-3z" fill="#101010" stroke="#101010" /></g>
+                            <defs>
+                                <clipPath id="a"><path fill="#fff" d="M0 0h24v24H0z" /></clipPath>
+                            </defs>
+                        </svg>
                     </a>
                 </div>
+            </div>
+        </header>
 
-                <a href="#contact" class="header__cta">
-                    <span class="header__cta-text">Приєднатись</span>
-                    <svg class="header__cta-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M18.5 5.5v13h-3v-7.883l-9.09 9.09-2.117-2.117 9.09-9.09H5.5v-3z" fill="#101010" stroke="#101010"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></svg>
-                </a>
+        <main>
+            <!-- Questionnaire Header -->
+            <section class="questionnaire-header">
+                <div class="container">
+                    <h1 class="questionnaire-header__title">Анкета вiдбору</h1>
+                    <h2 class="questionnaire-header__subtitle">
+                        СТАРТ <br />
+                        В АРБІТРАЖІ
+                    </h2>
+                    <div class="questionnaire-header__year">2025</div>
+                </div>
+            </section>
+
+            <!-- Hero Section -->
+            <section class="questionnaire-hero">
+                <div class="container">
+                    <h2 class="questionnaire-hero__title">Мінімум теорії — максимум результату</h2>
+                    <p class="questionnaire-hero__subtitle">
+                        4 уроки × по 20 хв<br />
+                        Без води. Тільки реальні інструменти та практика.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Lessons Section -->
+            <section class="questionnaire-lessons">
+                <div class="container">
+                    <h2 class="questionnaire-lessons__title">
+                        <span class="questionnaire-lessons__title-green">НА КУРСІ</span>
+                        <br />
+                        <span class="questionnaire-lessons__title-white"> ОТРИМАЄШ</span>
+                    </h2>
+                    <div class="questionnaire-lessons__grid">
+                        <div class="questionnaire-lesson-card" data-lesson="1">
+                            <h3 class="questionnaire-lesson-card__title">Розуміння, як заробляють на арбітражі у фін-вертикалі</h3>
+                            <img src="./img/advantages-img-1.webp" alt="advantage" class="questionnaire-lesson-card__img" />
+                        </div>
+
+                        <div class="questionnaire-lesson-card" data-lesson="2">
+                            <h3 class="questionnaire-lesson-card__title">Збереш перший стек без зливу бюджету</h3>
+                            <img src="./img/advantages-img2.webp" alt="advantage" class="questionnaire-lesson-card__img" />
+                        </div>
+
+                        <div class="questionnaire-lesson-card" data-lesson="3">
+                            <h3 class="questionnaire-lesson-card__title">Обереш свій шлях - соло чи команда</h3>
+                            <img src="./img/advantages-img3.webp" alt="advantage" class="questionnaire-lesson-card__img" />
+                        </div>
+
+                        <div class="questionnaire-lesson-card" data-lesson="4">
+                            <h3 class="questionnaire-lesson-card__title">Отримаєш доступ до закритого телеграм каналу</h3>
+                            <img src="./img/advantages-img4.webp" alt="advantage" class="questionnaire-lesson-card__img" />
+                        </div>
+
+                        <div class="questionnaire-lesson-card" data-lesson="5">
+                            <h3 class="questionnaire-lesson-card__title">Реальні офери, на яких заробляє команда Pablos</h3>
+                            <img src="./img/advantages-img5.webp" alt="advantage" class="questionnaire-lesson-card__img" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Form Section -->
+            <section class="contact" id="contact">
+                <div class="container">
+                    <div class="contact__content">
+                        <div class="contact__info">
+                            <h2 class="contact__title">Готовий почати?</h2>
+                            <p class="contact__text">Заповни анкету та отримай доступ до безкоштовних уроків</p>
+                        </div>
+
+                        <form class="contact__form" name="submit-to-google-sheet">
+                            <h3 class="contact__form-title">Залиште заявку і ми зв'яжимося з вами</h3>
+                            <div class="contact__form-inputs">
+                                <input type="text" placeholder="Ім'я" class="contact__form-input" id="contactName" name="name" required />
+                                <input type="tel" placeholder="Телефон" class="contact__form-input" id="contactPhone" name="phone" required />
+                                <input type="email" placeholder="E-mail" class="contact__form-input" id="contactEmail" name="email" required />
+                                <input type="text" placeholder="Нік в телеграмі" class="contact__form-input" id="contactTelegram" name="telegram" />
+                            </div>
+                            <label class="contact__checkbox-label">
+                                <input type="checkbox" class="contact__checkbox" name="agreement" required />
+                                <div class="contact__checkbox-custom"></div>
+                                <span class="contact__checkbox-text">Я свідомо заповнюю форму для отримання більш детальної інформації та розумію, що зі мною звʼязується менеджер</span>
+                            </label>
+                            <button type="submit" class="contact__form-btn">
+                                <span class="contact__form-btn-text">ОТРИМАТИ ДОСТУП</span>
+                                <svg class="contact__form-btn-icon" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#a)">
+                                        <path d="M19 5.5v13h-3v-7.883l-9.09 9.09-2.117-2.117 9.09-9.09H6v-3z" fill="#101010" stroke="#101010" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="a">
+                                            <path fill="#fff" d="M.5 0h24v24H.5z" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
+
+                            <input type="hidden" name="utm_source" id="utm_source" />
+                            <input type="hidden" name="utm_medium" id="utm_medium" />
+                            <input type="hidden" name="utm_campaign" id="utm_campaign" />
+                            <input type="hidden" name="utm_content" id="utm_content" />
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Попап для благодарности -->
+        <div id="thankYouPopup">
+            <div class="popup-content">
+                <div class="modal__title">Ми вже готуємося з тобою зв’язатися та розповісти все детально.</div>
+                <div class="modal__subtitle">Щоб залишатися в курсі новин і регулярно отримувати інсайти з арбітражу — заходь у наш Telegram-канал.</div>
+                <a href="https://t.me/pablos_academy" target="_blank">Перейти до каналу</a>
             </div>
         </div>
 
-    </header>
-
-    <main>
-        <!-- Questionnaire Header -->
-        <section class="questionnaire-header">
-            <div class="container">
-                <h1 class="questionnaire-header__title">Анкета вiдбору</h1>
-                <h2 class="questionnaire-header__subtitle">СТАРТ <br> В АРБІТРАЖІ</h2>
-                <div class="questionnaire-header__year">2025</div>
-            </div>
-        </section>
-
-        <!-- Hero Section -->
-        <section class="questionnaire-hero">
-            <div class="container">
-                <h2 class="questionnaire-hero__title">Мінімум теорії — максимум результату</h2>
-                <p class="questionnaire-hero__subtitle">4 уроки × по 20 хв<br>Без води. Тільки реальні інструменти та практика.</p>
-            </div>
-        </section>
-
-        <!-- Lessons Section -->
-        <section class="questionnaire-lessons">
-            <div class="container">
-                <h2 class="questionnaire-lessons__title">
-                    <span class="questionnaire-lessons__title-green">НА КУРСІ</span>
-                    <br>
-                    <span class="questionnaire-lessons__title-white"> ОТРИМАЄШ</span>
-                </h2>
-                <div class="questionnaire-lessons__grid">
-                    <div class="questionnaire-lesson-card" data-lesson="1">
-                        <h3 class="questionnaire-lesson-card__title">Розуміння, як заробляють на арбітражі у фін-вертикалі</h3>
-                        <img src="./img/advantages-img-1.webp" alt="advantage" class="questionnaire-lesson-card__img">
-                    </div>
-
-                    <div class="questionnaire-lesson-card" data-lesson="2">
-                        <h3 class="questionnaire-lesson-card__title">Збереш перший стек без зливу бюджету</h3>
-                        <img src="./img/advantages-img2.webp" alt="advantage" class="questionnaire-lesson-card__img">
-                    </div>
-
-                    <div class="questionnaire-lesson-card" data-lesson="3">
-                        <h3 class="questionnaire-lesson-card__title">Обереш свій шлях - соло чи команда</h3>
-                        <img src="./img/advantages-img3.webp" alt="advantage" class="questionnaire-lesson-card__img">
-                    </div>
-
-                    <div class="questionnaire-lesson-card" data-lesson="4">
-                        <h3 class="questionnaire-lesson-card__title">Отримаєш доступ до закритого телеграм каналу</h3>
-                        <img src="./img/advantages-img4.webp" alt="advantage" class="questionnaire-lesson-card__img">
-                    </div>
-
-                    <div class="questionnaire-lesson-card" data-lesson="5">
-                        <h3 class="questionnaire-lesson-card__title">Реальні офери, на яких заробляє команда Pablos</h3>
-                        <img src="./img/advantages-img5.webp" alt="advantage" class="questionnaire-lesson-card__img">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Form Section -->
-        <section class="contact" id="contact">
-            <div class="container">
-                <div class="contact__content">
-                    <div class="contact__info">
-                        <h2 class="contact__title">Готовий почати?</h2>
-                        <p class="contact__text">Заповни анкету та отримай доступ до безкоштовних уроків</p>
-                    </div>
-
-                    <form class="contact__form" action="https://formspree.io/f/myzdllne" method="POST" novalidate>
-                        <h3 class="contact__form-title">Залиште заявку і ми зв'яжимося з вами</h3>
-                        <div class="contact__form-inputs">
-                            <input type="text" placeholder="Ім'я" class="contact__form-input" id="contactName" name="name" required>
-                            <input type="tel" placeholder="Телефон" class="contact__form-input" id="contactPhone" name="phone" required>
-                            <input type="email" placeholder="E-mail" class="contact__form-input" id="contactEmail" name="email" required>
-                            <input type="text" placeholder="Нік в телеграмі" class="contact__form-input" id="contactTelegram" name="telegram">
-                        </div>
-                        <label class="contact__checkbox-label">
-                            <input type="checkbox" class="contact__checkbox" name="agreement" required>
-                            <div class="contact__checkbox-custom"></div>
-                            <span class="contact__checkbox-text">Я свідомо заповнюю форму для отримання більш детальної інформації та розумію, що зі мною звʼязується менеджер</span>
-                        </label>
-                        <button type="submit" class="contact__form-btn">
-                            <span class="contact__form-btn-text">ОТРИМАТИ ДОСТУП</span>
-                            <svg class="contact__form-btn-icon" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#a)">
-                                    <path d="M19 5.5v13h-3v-7.883l-9.09 9.09-2.117-2.117 9.09-9.09H6v-3z" fill="#101010" stroke="#101010"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="a">
-                                        <path fill="#fff" d="M.5 0h24v24H.5z"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <script src="./js/burger-menu.js"></script>
-    <script src="./js/contact-form.js"></script>
-    <script src="./js/phone-mask.js"></script>
-    <script src="./js/questionnaire-animations.js"></script>
-</body>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        <script src="js/contact-form.js?v=12354"></script>
+        <!-- <script src="./js/burger-menu.js"></script> -->
+        <script src="js/phone-mask.js"></script>
+        <script src="./js/questionnaire-animations.js"></script>
+    </body>
 </html>
