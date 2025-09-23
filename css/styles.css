@@ -2242,7 +2242,7 @@ justify-content: space-between;
 
 .questionnaire-header__subtitle {
     font-family: var(--font-benzin);
-    font-size: 38px;
+    font-size: 36px;
     font-weight: bold;
     color: var(--color-white);
     text-transform: uppercase;
